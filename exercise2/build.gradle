@@ -4,8 +4,19 @@ int secondLeft = 3
 int secondRight = 5
 
 task calculate {
+   dependsOn { randomize }
+   
    int first = 0
    int second = 0
+   
+   doFirst {
+      first = firstLeft + firstRight
+	  second = secondLeft + secondRight
+   }
+   
+   doLast {
+      println first - second
+   }
 }
 
 /*
@@ -22,3 +33,10 @@ TODO:
 - run it before calculate manually to see it works (gradlew randomize calculate)
 - use dependency control to always have it run before calculate (see https://docs.gradle.org/4.0/dsl/org.gradle.api.Task.html#org.gradle.api.Task:dependsOn(java.lang.Object[]) for help)
 */
+
+task randomize {
+	firstLeft = new Random().nextInt(20)
+	firstRight = new Random().nextInt(20)
+	secondLeft = new Random().nextInt(20)
+	secondRight = new Random().nextInt(20)
+}

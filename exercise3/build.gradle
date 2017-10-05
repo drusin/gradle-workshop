@@ -9,3 +9,8 @@ TODO:
 - Create an "Addition" task without modifcations (task unmodAddition (type: Addition) and run it
 - Create an "Addition" task where you modify the input and run it
 */
+
+apply from: "calcPlugin.gradle"
+import Addition
+
+task add(type:Addition)

@@ -22,3 +22,16 @@ TODO:
 - Feel free to use the already imported LocalDateTime ;)
 - Run it a few times to test if it works
 */
+
+task helloDiskWorld {
+   doLast {
+      println "No tortoise to see here!"
+   }
+}
+
+task conditionalGreeting {
+	onlyIf({LocalDateTime.now().getMinute() % 2 == 0})
+	doLast {
+		println "Hi, dude!"
+	}
+}

@@ -14,3 +14,12 @@ task calculate {
       println first - second
    }
 }
+
+class Addition extends DefaultTask {
+   int a = 0;
+   int b = 0;
+   @TaskAction
+   void doAdd() {
+      println a + b
+   }
+}
