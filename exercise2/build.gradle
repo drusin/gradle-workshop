@@ -1,0 +1,24 @@
+int firstLeft = 4
+int firstRight = 2
+int secondLeft = 3
+int secondRight = 5
+
+task calculate {
+   int first = 0
+   int second = 0
+}
+
+/*
+TODO:
+1. implement the logic for "calculate"
+- add "firstLeft" and "firstRight" and assign the result to "first"
+- do the same with second
+- print the difference between "first" and "second"
+- split the addition and substraction to "doFirst" and "doLast"
+- run it
+
+2. create a new task "randomize"
+- it should assign random values between 0 and 20 to "firstLeft", "firstRight", "secondLeft", "secondRight"
+- run it before calculate manually to see it works (gradlew randomize calculate)
+- use dependency control to always have it run before calculate (see https://docs.gradle.org/4.0/dsl/org.gradle.api.Task.html#org.gradle.api.Task:dependsOn(java.lang.Object[]) for help)
+*/

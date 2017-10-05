@@ -1,0 +1,7 @@
+1. run "gradlew init --type java-application" to create a java application skeleton
+2. look at the gradle build file and try to understand it
+3. run gradlew build
+4. find the html test report in the output directory
+5. change the code to make a test fail
+6. re-run gradlew build (or run gradlew test)
+7. look at the html test report now

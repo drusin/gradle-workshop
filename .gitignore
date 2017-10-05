@@ -1,0 +1,5 @@
+*/.gradle/*
+*/build/*
+/exercise4/build.gradle
+/exercise4/settings.gradle
+/exercise4/src/*

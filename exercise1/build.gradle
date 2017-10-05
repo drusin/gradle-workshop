@@ -1,0 +1,24 @@
+import java.time.LocalDateTime
+
+task helloWorld {
+   doLast {
+      println "Hello, world!"
+   }
+}
+
+/*
+TODO:
+1. Run the helloWorld task
+- use "gradlew helloWorld"
+- try out ussing different camelCaseAbbr of helloWorld (e.g. gradlew hW)
+
+2. Create a similarly named task
+- try different abbrs to run the two tasks
+
+3. Conditional tasks
+- Create a new task named "conditionalGreeting"
+- Let it print "Conditional greetings!"
+- Have it only run when the current minute is dividible by 2 (see https://docs.gradle.org/4.0/dsl/org.gradle.api.Task.html#org.gradle.api.Task:onlyIf(groovy.lang.Closure) for help)
+- Feel free to use the already imported LocalDateTime ;)
+- Run it a few times to test if it works
+*/

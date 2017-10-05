@@ -1,0 +1,11 @@
+/*
+TODO:
+1. Script plugins
+- apply the "calcPlugin.gradle" plugin from this folder
+- try to run the "calculate" task
+
+2. Custom task types
+- Create a custom task type named "Addition" that adds two integers (class Addition extends DefaultTask {...})
+- Create an "Addition" task without modifcations (task unmodAddition (type: Addition) and run it
+- Create an "Addition" task where you modify the input and run it
+*/

@@ -1,0 +1,16 @@
+int firstLeft = 4
+int firstRight = 2
+int secondLeft = 3
+int secondRight = 5
+
+task calculate {
+   int first = 0
+   int second = 0
+   doFirst {
+      first = firstLeft + firstRight
+	  second = secondLeft + secondRight
+   }
+   doLast {
+      println first - second
+   }
+}
